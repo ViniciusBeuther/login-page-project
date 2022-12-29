@@ -1,0 +1,176 @@
+:root{
+    --back:#f3edea;
+    --mainleft:#f582ae;
+    --mainright:#fef6e4;
+    --text:#001858;
+    --card: #8bd4ddcb;
+}
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--back);
+}
+
+.main-div{
+    background-image: url(wave.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-color: var(--back);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 656px;
+    min-height: 582px;
+}
+.left-div{
+    display: flex;
+    height: 80vh;
+    width: 50vw;
+    background-color: var(--mainleft);
+    flex-direction: column;
+    align-items: center;
+    color: var(--text);
+    border: 1px solid #001858;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: -2px 0px 10px var(--mainleft);
+
+}
+.right-div{
+    height:80vh;
+    width: 30vw;
+    background-color: var(--mainright);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #001858;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 10px 0px 10px var(--mainright);
+}
+
+.login-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 70%;
+    height: 60%;
+    background-color: var(--card);
+    border: 1px solid #001858;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #8bd4ddcb;
+}
+
+.login-card > h1{
+    margin: 0px;
+    color: var(--text);
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+}
+
+.textfield{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px;
+    color: var(--text);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    color: var(--text);
+    background-color: var(--card);
+    font-size: 1.2rem;
+    outline: none;
+    box-sizing: border-box; /*Div filho nao passa do tamanho da div pai */
+    padding: 10px;
+    
+}
+
+.textfield > input::placeholder{
+    color: rgba(255, 255, 255, 0.573);
+
+}
+
+#check-box{
+    padding: 0px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.btn-login{
+    width: 65%;
+    padding: 5px;
+    border: 1px solid var(--text);
+    border-radius: 10px;
+    color: var(--text);
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+.btn-login:hover{
+    box-shadow: 0px 0px 10px var(--text);
+    padding: 6px;
+    color: var(--back);
+    background-color: var(--text);
+    cursor: pointer;
+    
+}
+
+.left-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 70%;
+    
+}
+@media only screen and (max-width:668px){
+    .main-div{
+        
+        background-image: none;
+        background-color: #f582ae;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+    }
+
+    .left-div{
+        display: none;
+        
+    }
+    .right-div{
+        border-radius: 10px;
+        width: 70%;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    body{
+        background-color: #f582ae;
+        width: 100%;
+        height: 100%;
+        display: inline-block; 
+    }
+}
+
+
