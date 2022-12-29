@@ -141,14 +141,15 @@ body{
     width: 70%;
     
 }
-@media only screen and (max-width:668px){
+@media only screen and (max-width:800px){
     .main-div{
         
         background-image: none;
         background-color: #f582ae;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+        margin-left: 5%;
         width: 100%;
         
     }
@@ -167,9 +168,7 @@ body{
     }
     body{
         background-color: #f582ae;
-        width: 100%;
-        height: 100%;
-        display: inline-block; 
+        overflow: hidden;
     }
 }
 
