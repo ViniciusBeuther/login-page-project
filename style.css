@@ -141,17 +141,17 @@ body{
     width: 70%;
     
 }
-@media only screen and (max-width:800px){
+@media only screen and (max-width:650px){
     .main-div{
-        
         background-image: none;
         background-color: #f582ae;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
-        margin-left: 5%;
+        justify-content: center;
         width: 100%;
-        
+        overflow: none;
+        min-width: 500px;
+        min-height: 582px;
     }
 
     .left-div{
@@ -160,7 +160,7 @@ body{
     }
     .right-div{
         border-radius: 10px;
-        width: 70%;
+        width: 80%;
         box-sizing: border-box;
         display: flex;
         align-items: center;
@@ -169,6 +169,8 @@ body{
     body{
         background-color: #f582ae;
         overflow: hidden;
+        max-width: 100vw;
+        max-height: 100vh;
     }
 }
 
